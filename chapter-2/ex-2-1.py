@@ -1,3 +1,10 @@
+name = "Peter Griffin"
+address = "31 Spooner St."
+location = "Quahog, Rhode Island; 32167" 
+phone = "555-420-6969"
+classinfo = "cis-121"
+
+
 # Programming Exercise 2-1
 # 
 # Program to display one person's contact information.
@@ -7,19 +14,19 @@
 
 
 # display the full name
-print("Peter Griffin")
+print(name)
 
 # display the address
-print("31 Spooner St.")
+print(address)
 
 # display the city, state and zip
-print("Quahog, Rhode Island; 32167")
+print(location)
 
 # display the phone number
-print("555-420-6969")
+print(phone)
 
 # display the course area
-print("cis-121")
+print(classinfo)
 
 
 
