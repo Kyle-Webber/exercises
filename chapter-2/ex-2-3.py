@@ -7,22 +7,25 @@
 
 # Variables to hold the size of the tract and number of acres.
 # be sure to initialize these as floats
+acrenumber = 0.0
+feet = float(0)
 
 
 # Constant for the number of square feet in an acre.
-
+SQUAREFOOT = 0.0000229568411 
 
 # Get the square feet in the tract from the user.
 # you will need to convert this input to a float
-
+squarefeet = input("Enter the number of square feet: ")
+squarefeet = float(squarefeet)
 
 # Calculate the number of acres.
-
+acres = squarefeet*SQUAREFOOT
 
 # Print the number of acres.
 # remember to format the acres to two decimal places
-
-
+output = "The number of acres is %.5f. Good effort, mate." % acres
+print(output)
 
 
 
