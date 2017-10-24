@@ -8,7 +8,7 @@
 
 
 # define the main function
-
+def main():
     # Define local float variables for loan, insurance, gas, oil, tires and maintenance
 
 
@@ -52,4 +52,4 @@
 
 
 # Call the main function to start the program
-
+    main()

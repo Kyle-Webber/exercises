@@ -15,26 +15,60 @@
 
 
 # define the main function
-
+def main():
 	# Define constant values for min addend and max addend
-
+    MIN = 0
+    MAX = 10
 
     # Define local int variables for addend 1, addend 2, user answer and correct answer
-    
+    addend_one = 0
+    addend_two = 0
+    user_answer = 0
+    correct_answer = 0
     
     # Generate random integers for addend 1 and addend 2, with values from min to max
     # constants defined above 
-
+    addend_one, addend_two = generate_random_ints(MIN,MAX)
     
     # Call the function to display addition problem passing addend 1 and addend 2 
-
+    display_addition_problem(addend_one,addend_two)
     # Assign the user answer to the result of calling the function to prompt for answer
-
+    user_answer = prompt_for_answer()
     # Calculate correct answer
-    
+    correct_answer = calculate_correct_answer(addend_one,addend_two)
     # Call the function to evaluate answer, passing correct answer and user answer
+    evaluate_answer(correct_answer,user_answer)
 
+def generate_random_int(min_value,max_value):
+    return 5
 
+def generate_random_ints(min_value,max_value):
+    return 5,6
+    
+def calculate_correct_answer(x,y):
+    return x + y
+
+def display_addition_problem(addend_one,addend_two):
+    line1 = format(addend_one, '5')
+    line2_left = "+"
+    line2_right = format(addend_two, '4')
+    line2 = line2_left + line2_right
+    print(line1)
+    print(line2)
+    
+def prompt_for_answer():
+    user_entry = input("Enter your answer: ")
+    return user_entry
+    
+def evaluate_answer(user_answer,correct_answer):
+    print("User answer is: ", user_answer)
+    print("Correct answer is: ", correct_answer)
+    if user_answer == correct_answer:
+        print("You got it correct!")
+    else:
+        print("Well, you know what they say; you win some and you lose some.")
+
+main()
 
 # Define a function to display addition problem
 # This function accepts two integer parameters, the addends,
