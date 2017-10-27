@@ -8,16 +8,18 @@
 
 
 # define a main function
-
+def main():
     # Declare local variables, line and filename as strings and counter as int
-    
+    int(counter)
     # Prompt the user for a file name
-
+    filename = input("Please enter the name of the file you would like read: ")
     # Open the specified file for reading
-
+    read = open(filename)
     # Read the first line of the file and increment the line counter to 1
     # this is needed to prepare conditions for the while loop to follow
-
+    filename.read()
+    for line in open(filename,'r').readlines(1):
+        return readlines
     
     # Use a while loop to read until counter is 5 or reading produces no data
 
@@ -31,8 +33,8 @@
 
 
     # Close file
-
+    filename.close()
 
 # Call the main function to begin the program
-
+main()
 

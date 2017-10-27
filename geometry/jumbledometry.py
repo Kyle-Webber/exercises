@@ -2,15 +2,14 @@ def area(width, length):
     return width * length
 
 def perimeter(width, length):
-    return 2 * (witdh + length)
+    return 2 * (width + length)
 
-import circle
-import rectangle
+
 
 AREA_OF_CIRCLE_CHOICE = 1
 CIRCUMFERENCE_CHOICE = 2
 AREA_RECTANGLE_CHOICE = 3
-PERIMETER_RECTANGLE CHOICE = 4
+PERIMETER_RECTANGLE_CHOICE = 4
 QUIT_CHOICE = 5
 
 def main():
@@ -29,7 +28,7 @@ def main():
             width = float(input("Enter the rectangle's width: "))
             length = input("Enter the rectangle's length: ")
             print("The area is",rectangle.area(width,length))
-        elif choice == PERIMETER_RECTANGLE_CHOICE
+        elif choice == PERIMETER_RECTANGLE_CHOICE:
             width = float(input("Enter the rectangle's width: "))
             length = float(input("Enter the rectangle's length: "))
             print("The perimeter is",rectangle.perimeter(width,length))
@@ -49,7 +48,7 @@ def display_menu():
 main()
 import math
 
-def area(radius):
+def area_1(radius):
     return math.pi * radius**2
 
 def circumference(radius):
